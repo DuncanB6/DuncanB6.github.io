@@ -85,6 +85,7 @@
 }
 
 @media screen and (max-width: 968px) {
+
     .navbar__toggle {
         display: block;
         position: absolute;
@@ -142,6 +143,7 @@
     .navbar__btn.mobile {
         display: flex;
         justify-content: center;
+        padding-top: 1rem; 
         padding-bottom: 2rem;
         width: 100%;
     }
@@ -153,3 +155,100 @@
     }
 }
 
+.hero {
+    background-color: #141414;
+}
+
+.hero__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin: 0 auto;
+    height: 90vh;
+    width: 100%;
+    padding: 0 50px;
+    max-width: 1300px;
+}
+
+.hero__content {
+    color: #fff;
+}
+
+.hero__content h1 {
+    font-size: 4rem;
+}
+
+.hero__content p {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.hero__btn {
+    font-size: 1rem;
+    background: #0ce48d;
+    padding: 14px 32px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    margin-top: 2rem;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.hero__btn:hover {
+    background: #0ba467;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hero__image {
+    text-align: center;
+}
+
+#hero-img {
+    width: 80%;
+    height: 80%;
+}
+
+@media screen and (max-width: 768px) {
+
+    .hero__container {
+        grid-template-columns: 1fr;
+        height: auto;
+        padding: 120px 0;
+    }
+
+    .hero__content {
+        text-align: center;
+        margin-bottom: 4rem;
+        padding: 0 32px;
+    }
+    
+    .hero__content h1 {
+        font-size: 2.5rem;
+        margin-top: 2rem;
+    }
+
+    .hero__content p {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .hero__container {
+        width: 100vw;
+        padding: 60px 0;
+    }
+
+    .hero__content h1 {
+        font-size: 2rem;
+        margin-top: 3rem;
+    }
+
+    .hero__btn {
+        padding: 12px 36px;
+        margin: 2.5rem 0;
+    }
+}

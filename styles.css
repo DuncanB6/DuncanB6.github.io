@@ -65,6 +65,8 @@
 }
 
 .button {
+    display: flex;
+    align-items: center;
     background: #0ce48d;
     padding: 10px 20px;
     border: none;
@@ -122,6 +124,31 @@
     .navbar__item {
         width: 100%;
         display: flex;
+        justify-content: center;
+    }
+
+    .navbar__links {
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar__btn.desktop {
+        display: none;
+    }
+
+    .navbar__btn.mobile {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 2rem;
+        width: 100%;
+    }
+
+    .button {
+        width: 80%;
+        height: 60px;
         justify-content: center;
     }
 }

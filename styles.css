@@ -79,9 +79,9 @@
         right: 20px;
         top: 50%;
         transform: translateY(-50%);
-        color: #fff;
+        color: #000;
         z-index: 10;
-        font-size: 1.5rem;
+        font-size: 2rem;
         border: none;
         background: none;
         cursor: pointer;
@@ -99,7 +99,7 @@
         height: calc(100% - 80px);
         opacity: 0;
         transition: all 0.5s ease;
-        background: #131313;
+        background: #f4f9f9;
         z-index: 10;
         margin: 0;
     }
@@ -107,6 +107,14 @@
     .navbar__menu.active {
         right: 0;
         opacity: 1;
+    }
+
+    #navbar-logo {
+        color: #000;
+        cursor: pointer;
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-weight: bold;
     }
 
     .navbar__item {

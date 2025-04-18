@@ -15,12 +15,12 @@
     z-index: 1000;
     width: 100%;
     margin: 0 auto;
-    padding: 0 50px;
+    padding: 0 30px;
     position: fixed;
     overflow: hidden;
 }
 
-#navbar-logo {
+#navbar-name {
     color: #000;
     cursor: pointer;
     text-decoration: none;
@@ -109,12 +109,8 @@
         opacity: 1;
     }
 
-    #navbar-logo {
-        color: #000;
-        cursor: pointer;
-        text-decoration: none;
+    #navbar-name {
         font-size: 1.5rem;
-        font-weight: bold;
     }
 
     .navbar__item {

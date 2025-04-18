@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'FreeMono', monospace;
     overflow-x: hidden;
 }
 
@@ -17,20 +17,23 @@
     margin: 0 auto;
     padding: 0 50px;
     position: fixed;
+    overflow: hidden;
 }
 
 #navbar-logo {
-    color: #0ce48d;
+    color: #000;
     cursor: pointer;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    font-weight: bold;
 }
 
 .navbar__menu {
     display: flex;
     justify-content: center;
     list-style: none;
-    margin: 0 auto;
+    margin: 0;
+    margin-left: auto;
 }
 
 .navbar__item {
@@ -38,50 +41,34 @@
 }
 
 .navbar__links {
-    color: #fff;
+    color: #000;
     text-decoration: none;
     height: 100%;
     padding: 0 1rem;
     display: flex;
     align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .navbar__links:hover {
-    color: #0ce48d;
-    transition: all 0.3s ease;
-}
-
-.navbar__btn {
-    display: flex;
-    align-items: center;
-}
-
-.navbar__btn.mobile {
-    display: none;
-}
-
-.navbar__btn.desktop {
-    display: flex;
-}
-
-.button {
-    display: flex;
-    align-items: center;
-    background: #0ce48d;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    color: #fff;
-    text-decoration: none;
-}
-
-.button:hover {
-    background: #15b856;
+    color: #aaa;
     transition: all 0.3s ease;
 }
 
 .navbar__toggle {
     display: none;
+}
+
+#wapta-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    pointer-events: none;
 }
 
 @media screen and (max-width: 968px) {
@@ -133,24 +120,6 @@
         padding: 1.5rem;
         width: 100%;
         display: flex;
-        justify-content: center;
-    }
-
-    .navbar__btn.desktop {
-        display: none;
-    }
-
-    .navbar__btn.mobile {
-        display: flex;
-        justify-content: center;
-        padding-top: 1rem; 
-        padding-bottom: 2rem;
-        width: 100%;
-    }
-
-    .button {
-        width: 80%;
-        height: 60px;
         justify-content: center;
     }
 }

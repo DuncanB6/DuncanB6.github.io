@@ -59,7 +59,7 @@
 }
 
 .navbar__links:hover {
-    color: var(--colour-4);
+    color: var(--colour-3);
     transition: all 0.3s ease;
 }
 
@@ -144,14 +144,14 @@
     grid-template-columns: 1fr 1fr;
     align-items: center;
     margin: 0 auto;
-    height: 80vh;
+    height: 90vh;
     width: 100%;
     padding: 0 50px;
     max-width: 1300px;
 }
 
 .hero__content {
-    color: var(--colour-4);
+    color: var(--colour-5);
 }
 
 .hero__content h1 {
@@ -169,7 +169,7 @@
     padding: 14px 32px;
     border: none;
     border-radius: 4px;
-    color: var(--colour-6);
+    color: var(--colour-5);
     margin-top: 2rem;
     cursor: pointer;
     outline: none;

@@ -6,9 +6,6 @@ menu.addEventListener("click", function () {
     menuLinks.classList.toggle("active");
 });
 
-const logos = document.querySelector(".rotating-logos__track").cloneNode(true);
-document.querySelector(".rotating-logos").appendChild(logos);
-
 window.addEventListener("load", () => {
     const yearElement = document.getElementById("year");
     const currentYear = new Date().getFullYear();

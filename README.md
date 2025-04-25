@@ -10,4 +10,10 @@ This project is a website for myself (Duncan Boyd) to showcase myself and some o
 
 - [This website](https://undraw.co) is a great resource for some themed images.
 
+- [Colour palette](https://colorhunt.co/palette/f4f9f9ccf2f4a4ebf3aaaaaa)
+
+- Font: FreeMono, monospace
+
+
+
 

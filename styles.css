@@ -239,13 +239,13 @@
     }
 }
 
-/* my experiences section */
+/* experiences and projects sections */
 
-.experiences {
+.section {
     background-color: var(--colour-1);
 }
 
-.exp__container {
+.sect__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -256,20 +256,20 @@
     max-width: 1500px;
 }
 
-.exp__content {
+.sect__content {
     color: var(--colour-black);
 }
 
-.exp__content h1 {
+.sect__content h1 {
     font-size: 2rem;
 }
 
-.exp__content p {
+.sect__content p {
     margin-top: 1rem;
     font-size: 1rem;
 }
 
-.exp__btn {
+.sect__btn {
     font-size: 1rem;
     background: var(--colour-3);
     padding: 14px 32px;
@@ -282,114 +282,25 @@
     transition: all 0.3s ease;
 }
 
-.exp__btn:hover {
+.sect__btn:hover {
     background: var(--colour-2);
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* image divs defined seperately to allow for order changes */
 .exp__image {
     text-align: center;
 }
 
+.proj__image {
+    text-align: center;
+}
+
+/* images defined seperately to allow for different scaling */
 #exp-img {
     width: 80%;
     height: 80%;
-}
-
-@media screen and (max-width: 768px) {
-
-    .exp__container {
-        grid-template-columns: 1fr;
-        height: auto;
-        padding: 120px 0;
-    }
-
-    .exp__content {
-        text-align: center;
-        margin-bottom: 4rem;
-        padding: 0 32px;
-    }
-    
-    .exp__content h1 {
-        font-size: 2.5rem;
-        margin-top: 2rem;
-    }
-
-    .exp__content p {
-        font-size: 1.5rem;
-    }
-}
-
-@media screen and (max-width: 480px) {
-
-    .exp__container {
-        width: 100vw;
-        padding: 60px 0;
-    }
-
-    .exp__content h1 {
-        font-size: 2rem;
-        margin-top: 3rem;
-    }
-
-    .exp__btn {
-        padding: 12px 36px;
-        margin: 2.5rem 0;
-    }
-}
-
-/* projects section */
-
-.projects {
-    background-color: var(--colour-1);
-}
-
-.proj__container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    margin: 0 auto;
-    height: 70vh;
-    width: 100%;
-    padding: 0 50px;
-    max-width: 1500px;
-}
-
-.proj__content {
-    color: var(--colour-black);
-}
-
-.proj__content h1 {
-    font-size: 2rem;
-}
-
-.proj__content p {
-    margin-top: 1rem;
-    font-size: 1rem;
-}
-
-.proj__btn {
-    font-size: 1rem;
-    background: var(--colour-3);
-    padding: 14px 32px;
-    border: none;
-    border-radius: 4px;
-    color: var(--colour-black);
-    margin-top: 2rem;
-    cursor: pointer;
-    outline: none;
-    transition: all 0.3s ease;
-}
-
-.proj__btn:hover {
-    background: var(--colour-2);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.proj__image {
-    text-align: center;
 }
 
 #proj-img {
@@ -399,45 +310,46 @@
 
 @media screen and (max-width: 768px) {
 
+    /* change order of proj section image in mobile mode (pic above) */
     .proj__image {
         order: -1;
     }
 
-    .proj__container {
+    .sect__container {
         grid-template-columns: 1fr;
         height: auto;
         padding: 120px 0;
     }
 
-    .proj__content {
+    .sect__content {
         text-align: center;
         margin-bottom: 4rem;
         padding: 0 32px;
     }
     
-    .proj__content h1 {
+    .sect__content h1 {
         font-size: 2.5rem;
         margin-top: 2rem;
     }
 
-    .proj__content p {
+    .sect__content p {
         font-size: 1.5rem;
     }
 }
 
 @media screen and (max-width: 480px) {
 
-    .proj__container {
+    .sect__container {
         width: 100vw;
         padding: 60px 0;
     }
 
-    .proj__content h1 {
+    .sect__content h1 {
         font-size: 2rem;
         margin-top: 3rem;
     }
 
-    .proj__btn {
+    .sect__btn {
         padding: 12px 36px;
         margin: 2.5rem 0;
     }

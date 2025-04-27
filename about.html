@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billboard Project</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/9e67cf4e47.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar" role="navigation" aria-label="Main Navigation" >
+            <div class="navbar__container">
+                <a href="/" id="navbar-name">Duncan Boyd</a>
+                <ul class="navbar__menu">
+                    <li class="navbar__item">
+                        <a href="/experiences.html" id="" class="navbar__links">My Experiences</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="/projects.html" id="" class="navbar__links">My Projects</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="/about.html" id="" class="navbar__links">About Me</a>
+                    </li>
+                </ul>
+
+                <button class="navbar__toggle" id="mobile-menu" aria-label="Toggle Navigation" aria-expanded="" false>
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <img id="wapta-img" src="/images/wapta.jpg" alt="Picture of the Wapta icefield">
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero__container">
+                <div class="hero__content">
+                    <h1>Welcome!</h1>
+                    <p>Hi, I'm Duncan, a UBC engineering graduate with a passion for the outdoors and electronics. Learn more about me at the link below!</p>
+                    <button class="hero__btn" id="aboutBtn">About Me</button>
+                </div>
+                <div class="hero__image">
+                    <img id="hero-img" src="/images/headshot.jpeg" alt="Headshot of Duncan" />
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="sect__container">
+                <div class="exp__image">
+                    <img id="exp-img" src="/images/ikomed.jpeg" alt="Team picture at Ikomed" />
+                </div>
+                <div class="sect__content">
+                    <h1>What I've Been Up To</h1>
+                    <p>Check out some of my experiences with work and clubs by clicking the button below!</p>
+                    <button class="sect__btn" id="expBtn">My Experiences</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="sect__container">
+                <div class="sect__content">
+                    <h1>Tinkering and Design</h1>
+                    <p>I've occupied myself with a few fun personal projects. Check out my work by clicking the button below!</p>
+                    <button class="sect__btn" id="projBtn">My Projects</button>
+                </div>
+                <div class="proj__image">
+                    <img id="proj-img" src="/images/dashlight.jpeg" alt="Team picture at Ikomed" />
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer__container">
+                <section class="social__media">
+                    <div class="social__media-wrap">
+                        <div class="footer__logo">
+                            <a href="/" id="footer-logo">Billboard Project</a>
+                        </div>
+                        <p class="website__rights">
+                            © Billboard Project <span id="year"></span> All rights reserved
+                        </p>
+                        <div class="social__icons">
+                            <a href="https://www.instagram.com/classic._duncan/" class="social__icon-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="https://github.com/DuncanB6" class="social__icon-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/duncanboyd3/" class="social__icon-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </footer>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>

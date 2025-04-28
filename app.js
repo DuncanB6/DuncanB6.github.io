@@ -88,6 +88,7 @@ const images = [
 ];
 
 const carouselImage = document.getElementById('carousel-image');
+const carouselContainer = document.getElementById('carousel__container');
 
 function updateCarouselImage() {
     carouselImage.src = images[currentIndex];
@@ -102,3 +103,16 @@ function prevImage() {
     currentIndex = (currentIndex - 1 + images.length) % images.length;
     updateCarouselImage();
 }
+
+let carouselInterval = setInterval(nextImage, 2000);
+
+// Stop the automatic image change when the mouse enters the carousel container
+carouselContainer.addEventListener("mouseenter", () => {
+  console.log("entered")
+  clearInterval(carouselInterval); // Stop the interval
+});
+
+// Restart the automatic image change when the mouse leaves the carousel container
+carouselContainer.addEventListener("mouseleave", () => {
+  carouselInterval = setInterval(nextImage, 2000); // Restart the interval
+});

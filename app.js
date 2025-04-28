@@ -12,10 +12,12 @@ window.addEventListener("load", () => {
     yearElement.textContent = currentYear;
 });
 
+// button commands
 document.addEventListener("DOMContentLoaded", () => {
     const aboutBtn = document.getElementById("aboutBtn");
     const expBtn = document.getElementById("expBtn");
     const projBtn = document.getElementById("projBtn");
+    const resumeBtn = document.getElementById("resumeBtn");
   
     if (aboutBtn) {
       aboutBtn.addEventListener("click", () => {
@@ -34,4 +36,10 @@ document.addEventListener("DOMContentLoaded", () => {
           window.location.href = "projects.html";
         });
       }
+
+    if (resumeBtn) {
+      resumeBtn.addEventListener("click", () => {
+          window.open("resume.pdf", "_blank");
+      });
+    }
   });

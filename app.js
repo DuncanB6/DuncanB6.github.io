@@ -79,3 +79,26 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+let currentIndex = 0;
+const images = [
+    "images/about/headshot.jpeg",
+    "images/about/dashlight.jpeg",
+    "images/about/ikomed.jpeg"
+];
+
+const carouselImage = document.getElementById('carousel-image');
+
+function updateCarouselImage() {
+    carouselImage.src = images[currentIndex];
+}
+
+function nextImage() {
+    currentIndex = (currentIndex + 1) % images.length;
+    updateCarouselImage();
+}
+
+function prevImage() {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    updateCarouselImage();
+}

@@ -104,15 +104,15 @@ function prevImage() {
     updateCarouselImage();
 }
 
-let carouselInterval = setInterval(nextImage, 2000);
+let carouselInterval = setInterval(nextImage, 1000);
 
-// Stop the automatic image change when the mouse enters the carousel container
+// stop carousel if mouse is over it
 carouselContainer.addEventListener("mouseenter", () => {
   console.log("entered")
-  clearInterval(carouselInterval); // Stop the interval
+  clearInterval(carouselInterval);
 });
 
-// Restart the automatic image change when the mouse leaves the carousel container
+// start carousel if mouse leaves
 carouselContainer.addEventListener("mouseleave", () => {
-  carouselInterval = setInterval(nextImage, 2000); // Restart the interval
+  carouselInterval = setInterval(nextImage, 2000);
 });

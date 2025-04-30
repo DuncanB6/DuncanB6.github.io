@@ -87,11 +87,18 @@ const images = [
     "images/about/ikomed.jpeg"
 ];
 
+
 const carouselImage = document.getElementById('carousel-image');
-const carouselContainer = document.getElementById('carousel__container');
+const carouselContainer = document.getElementById('carousel');
+const indexElement = document.getElementById("image_index");
+const allImagesElement = document.getElementById("all_images");
+
+indexElement.textContent = currentIndex + 1;
+allImagesElement.textContent = images.length;
 
 function updateCarouselImage() {
     carouselImage.src = images[currentIndex];
+    indexElement.textContent = currentIndex + 1;
 }
 
 function nextImage() {
@@ -103,6 +110,7 @@ function prevImage() {
     currentIndex = (currentIndex - 1 + images.length) % images.length;
     updateCarouselImage();
 }
+
 
 let carouselInterval = setInterval(nextImage, 2000);
 

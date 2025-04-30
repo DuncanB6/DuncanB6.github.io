@@ -431,7 +431,20 @@
     }
 }
 
-.carousel__container {
+.carousel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    min-height: 70vh;
+    width: 100%;
+    max-width: 1500px;
+    color: var(--colour-black);
+    text-align: center;
+}
+
+.carousel__body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -443,7 +456,7 @@
     position: relative;
 }
 
-.carousel {
+.carousel__images {
     display: flex;
     justify-content: center;
     width: 100%;

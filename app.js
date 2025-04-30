@@ -104,7 +104,7 @@ function prevImage() {
     updateCarouselImage();
 }
 
-let carouselInterval = setInterval(nextImage, 1000);
+let carouselInterval = setInterval(nextImage, 2000);
 
 // stop carousel if mouse is over it
 carouselContainer.addEventListener("mouseenter", () => {

@@ -14,6 +14,20 @@ This project is a website for myself (Duncan Boyd) to showcase myself and some o
 
 - Font: FreeMono, monospace
 
+## Variable Naming
+
+### CSS
+
+- All variables: --variable-name
+
+### HTML
+
+- Class names: variable-name
+- IDs: variable-name
+
+### JS
+
+- All variables: variableName
 
 
 

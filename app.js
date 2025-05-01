@@ -1,3 +1,11 @@
+/*
+Javascript functions for website functionality
+
+Duncan Boyd
+duncan@wapta.ca
+Apr 30, 2025
+*/
+
 
 // load header and footer
 document.addEventListener("DOMContentLoaded", () => {
@@ -11,7 +19,6 @@ document.addEventListener("DOMContentLoaded", () => {
       console.error("Error loading header:", error);
     });
 
-  // Load and insert the footer
   fetch("includes/footer.html")
     .then(response => response.text())
     .then(data => {
@@ -48,12 +55,12 @@ function initializeFooterFunctions() {
     }
 }
 
-// button commands
+// button commands for all pages
 document.addEventListener("DOMContentLoaded", () => {
-  const aboutBtn = document.getElementById("aboutBtn");
-  const expBtn = document.getElementById("expBtn");
-  const projBtn = document.getElementById("projBtn");
-  const resumeBtn = document.getElementById("resumeBtn");
+  const aboutBtn = document.getElementById("about-button");
+  const expBtn = document.getElementById("exp-button");
+  const projBtn = document.getElementById("proj-button");
+  const resumeBtn = document.getElementById("resume-button");
 
   if (aboutBtn) {
     aboutBtn.addEventListener("click", () => {
@@ -93,11 +100,12 @@ const images = [
     "images/about/whistler_run.jpeg",
 ];
 
+// controls for image carousel
 
 const carouselImage = document.getElementById('carousel-image');
 const carouselContainer = document.getElementById('carousel');
-const indexElement = document.getElementById("image_index");
-const allImagesElement = document.getElementById("all_images");
+const indexElement = document.getElementById("image-index");
+const allImagesElement = document.getElementById("all-images");
 
 indexElement.textContent = currentIndex + 1;
 allImagesElement.textContent = images.length;
@@ -117,7 +125,7 @@ function prevImage() {
     updateCarouselImage();
 }
 
-
+// automatic scroll for carousel
 let carouselInterval = setInterval(nextImage, 2000);
 
 // stop carousel if mouse is over it

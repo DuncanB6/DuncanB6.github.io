@@ -8,10 +8,6 @@ function getQueryParam(param) {
     return res.json();
   }
   
-  function createImageCarousel(images) {
-    return images.map(src => `<img src="${src}" width="300" style="margin-right:10px;">`).join('');
-  }
-  
   async function renderProjectDetail() {
     const id = getQueryParam("id");
     if (!id) {
@@ -26,10 +22,32 @@ function getQueryParam(param) {
         .join(" | ");
   
       document.getElementById("project-detail").innerHTML = `
-        <h1>${project.title}</h1>
-        <div>${createImageCarousel(project.images)}</div>
-        <p>${project.fullDescription}</p>
-        <div>${links}</div>
+      <section class="blurb">
+            <div class="blurb-content">
+                <h1>${project.title}</h1>
+
+                <p>${project.fullDescription}</p>
+
+                <div class="item-links">${links}</div>
+            </div>
+        </section>
+
+        <section class="carousel" id="carousel">
+            <div class="carousel-body">
+                <div class="carousel-images">
+                    <img id="carousel-img" src="images/about/IMG_7346.jpg" alt="Carousel Image">
+                </div>
+
+                <div class="controls">
+                    <button class="carousel-btn" onclick="prevImage()">&#10094;</button>
+                    <button class="carousel-btn" onclick="nextImage()">&#10095;</button>
+                </div>
+            </div>
+
+            <p class="image-index-indicator">
+                <span id="image-index"></span> / <span id="image-count"></span>
+            </p>
+        </section>
       `;
     } catch (error) {
       console.error("Failed to load project:", error);
@@ -37,5 +55,5 @@ function getQueryParam(param) {
     }
   }
   
-  renderProjectDetail();
+renderProjectDetail();
   

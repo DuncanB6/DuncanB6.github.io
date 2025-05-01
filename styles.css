@@ -528,6 +528,12 @@ May 1, 2025
     text-align: center;
 }
 
+/* --- item page --- */
+
+.item-links {
+    padding-top: 2rem;
+}
+
 /* footer section */
 
 .footer-container {

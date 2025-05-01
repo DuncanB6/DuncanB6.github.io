@@ -168,15 +168,15 @@
 }
 
 .intro-btn {
-    font-size: 1rem;
-    background: var(--colour-3);
     padding: 14px 32px;
+    font-size: 1rem;
     border: none;
     border-radius: 4px;
-    color: var(--colour-black);
     margin-top: 2rem;
     cursor: pointer;
     outline: none;
+    color: var(--colour-black);
+    background: var(--colour-3);
     transition: all 0.3s ease;
 }
 
@@ -191,8 +191,8 @@
 }
 
 #intro-img {
-    width: 70%;
-    height: 70%;
+    width: 65%;
+    height: 65%;
 }
 
 @media screen and (max-width: 768px) {
@@ -217,6 +217,11 @@
     .intro-content p {
         font-size: 1.5rem;
     }
+
+    #intro-img {
+        width: 50%;
+        height: 50%;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -232,7 +237,7 @@
     }
 
     .intro-btn {
-        padding: 12px 36px;
+        padding: 1rem 2rem;
         margin: 2.5rem 0;
     }
 }
@@ -247,11 +252,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    margin: 0 auto;
     height: 70vh;
     width: 100%;
-    padding: 0 50px;
-    max-width: 1500px;
+    padding: 0 3rem;
 }
 
 .overview-content {
@@ -268,15 +271,15 @@
 }
 
 .overview-btn {
-    font-size: 1rem;
-    background: var(--colour-3);
     padding: 14px 32px;
     border: none;
     border-radius: 4px;
-    color: var(--colour-black);
     margin-top: 2rem;
+    font-size: 1rem;
     cursor: pointer;
     outline: none;
+    color: var(--colour-black);
+    background: var(--colour-3);
     transition: all 0.3s ease;
 }
 
@@ -286,12 +289,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* image divs defined seperately to allow for order changes */
-.exp-image {
-    text-align: center;
-}
-
-.proj-image {
+.overview-image {
     text-align: center;
 }
 
@@ -308,21 +306,20 @@
 
 @media screen and (max-width: 768px) {
 
-    /* change order of proj section image in mobile mode (pic above) */
-    .proj-image {
+    /* change order of image in mobile mode (pic above text) */
+    .overview-image {
         order: -1;
     }
 
     .overview-container {
         grid-template-columns: 1fr;
         height: auto;
-        padding: 120px 0;
+        padding: 2rem 0;
     }
 
     .overview-content {
         text-align: center;
-        margin-bottom: 4rem;
-        padding: 0 32px;
+        padding: 0 2rem;
     }
     
     .overview-content h1 {
@@ -333,13 +330,24 @@
     .overview-content p {
         font-size: 1.5rem;
     }
+
+    /* images defined seperately to allow for different scaling */
+    #exp-img {
+        width: 65%;
+        height: 65%;
+    }
+
+    #proj-img {
+        width: 65%;
+        height: 65%;
+    }
 }
 
 @media screen and (max-width: 480px) {
 
     .overview-container {
         width: 100vw;
-        padding: 60px 0;
+        padding: 2rem 0;
     }
 
     .overview-content h1 {
@@ -348,7 +356,7 @@
     }
 
     .overview-btn {
-        padding: 12px 36px;
+        padding: 1rem 2rem;
         margin: 2.5rem 0;
     }
 }

@@ -16,7 +16,7 @@ async function renderProjects() {
       item.innerHTML = `
         <a href="project.html?id=${project.id}">
           <img src="${project.images[0]}" alt="${project.title}" width="200"/>
-          <h3>${project.title}</h3>
+          <h3 id="project-title">${project.title}</h3>
           <p>${project.description}</p>
         </a>
       `;

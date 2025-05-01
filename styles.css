@@ -23,6 +23,11 @@ May 1, 2025
     --colour-white: #FFFFFF;
 }
 
+#project-title {
+    color: var(--colour-3);
+    text-decoration: none;
+}
+
 .generic-btn {
     padding: 14px 32px;
     font-size: 1rem;

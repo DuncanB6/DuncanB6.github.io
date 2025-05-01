@@ -137,13 +137,13 @@
 
 /* --- home page --- */
 
-/* intro hero section */
+/* intro section */
 
-.hero {
+.intro {
     background-color: var(--colour-white);
 }
 
-.hero-container {
+.intro-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -154,20 +154,20 @@
     max-width: 1300px;
 }
 
-.hero-content {
+.intro-content {
     color: var(--colour-black);
 }
 
-.hero-content h1 {
+.intro-content h1 {
     font-size: 4rem;
 }
 
-.hero-content p {
+.intro-content p {
     margin-top: 1rem;
     font-size: 1.5rem;
 }
 
-.hero-btn {
+.intro-btn {
     font-size: 1rem;
     background: var(--colour-3);
     padding: 14px 32px;
@@ -180,58 +180,58 @@
     transition: all 0.3s ease;
 }
 
-.hero-btn:hover {
+.intro-btn:hover {
     background: var(--colour-2);
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.hero-image {
+.intro-img-container {
     text-align: center;
 }
 
-#hero-img {
+#intro-img {
     width: 70%;
     height: 70%;
 }
 
 @media screen and (max-width: 768px) {
 
-    .hero-container {
+    .intro-container {
         grid-template-columns: 1fr;
         height: auto;
         padding: 120px 0;
     }
 
-    .hero-content {
+    .intro-content {
         text-align: center;
         margin-bottom: 4rem;
         padding: 0 32px;
     }
     
-    .hero-content h1 {
+    .intro-content h1 {
         font-size: 2.5rem;
         margin-top: 2rem;
     }
 
-    .hero-content p {
+    .intro-content p {
         font-size: 1.5rem;
     }
 }
 
 @media screen and (max-width: 480px) {
 
-    .hero-container {
+    .intro-container {
         width: 100vw;
         padding: 60px 0;
     }
 
-    .hero-content h1 {
+    .intro-content h1 {
         font-size: 2rem;
         margin-top: 3rem;
     }
 
-    .hero-btn {
+    .intro-btn {
         padding: 12px 36px;
         margin: 2.5rem 0;
     }
@@ -239,11 +239,11 @@
 
 /* experiences and projects sections */
 
-.section {
+.overview {
     background-color: var(--colour-1);
 }
 
-.sect-container {
+.overview-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -254,20 +254,20 @@
     max-width: 1500px;
 }
 
-.sect-content {
+.overview-content {
     color: var(--colour-black);
 }
 
-.sect-content h1 {
+.overview-content h1 {
     font-size: 2rem;
 }
 
-.sect-content p {
+.overview-content p {
     margin-top: 1rem;
     font-size: 1rem;
 }
 
-.sect-btn {
+.overview-btn {
     font-size: 1rem;
     background: var(--colour-3);
     padding: 14px 32px;
@@ -280,7 +280,7 @@
     transition: all 0.3s ease;
 }
 
-.sect-btn:hover {
+.overview-btn:hover {
     background: var(--colour-2);
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -313,41 +313,41 @@
         order: -1;
     }
 
-    .sect-container {
+    .overview-container {
         grid-template-columns: 1fr;
         height: auto;
         padding: 120px 0;
     }
 
-    .sect-content {
+    .overview-content {
         text-align: center;
         margin-bottom: 4rem;
         padding: 0 32px;
     }
     
-    .sect-content h1 {
+    .overview-content h1 {
         font-size: 2.5rem;
         margin-top: 2rem;
     }
 
-    .sect-content p {
+    .overview-content p {
         font-size: 1.5rem;
     }
 }
 
 @media screen and (max-width: 480px) {
 
-    .sect-container {
+    .overview-container {
         width: 100vw;
         padding: 60px 0;
     }
 
-    .sect-content h1 {
+    .overview-content h1 {
         font-size: 2rem;
         margin-top: 3rem;
     }
 
-    .sect-btn {
+    .overview-btn {
         padding: 12px 36px;
         margin: 2.5rem 0;
     }

@@ -57,7 +57,7 @@ function initializeFooterFunctions() {
 
 // button commands for all pages
 document.addEventListener("DOMContentLoaded", () => {
-  const aboutBtn = document.getElementById("about-button");
+  const aboutBtn = document.getElementById("about-btn");
   const expBtn = document.getElementById("exp-button");
   const projBtn = document.getElementById("proj-button");
   const resumeBtn = document.getElementById("resume-button");

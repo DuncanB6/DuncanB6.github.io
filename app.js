@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
 function initializeHeaderFunctions() {
   // mobile menu button toggle
   const menu = document.querySelector("#mobile-menu");
-  const menuLinks = document.querySelector(".navbar__menu");
+  const menuLinks = document.querySelector(".navbar-menu");
   if (menu && menuLinks) {
     menu.addEventListener("click", function () {
       menu.classList.toggle("is-active");

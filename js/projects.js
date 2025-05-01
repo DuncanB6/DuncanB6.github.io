@@ -14,7 +14,7 @@ async function renderProjects() {
       const project = await loadProjectData(id);
       const item = document.createElement("div");
       item.innerHTML = `
-        <a href="project.html?id=${project.id}">
+        <a href="item.html?id=${project.id}">
           <img src="${project.images[0]}" alt="${project.title}" width="200"/>
           <h3 id="project-title">${project.title}</h3>
           <p>${project.description}</p>

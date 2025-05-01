@@ -36,7 +36,6 @@ done
 
 ## To Do
 
-- All buttons have same styling?
 - Add 3D printing image to about page carousel
 - Make sure carousel code is generic and reusable
 

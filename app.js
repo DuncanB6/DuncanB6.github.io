@@ -58,9 +58,9 @@ function initializeFooterFunctions() {
 // button commands for all pages
 document.addEventListener("DOMContentLoaded", () => {
   const aboutBtn = document.getElementById("about-btn");
-  const expBtn = document.getElementById("exp-button");
-  const projBtn = document.getElementById("proj-button");
-  const resumeBtn = document.getElementById("resume-button");
+  const expBtn = document.getElementById("exp-btn");
+  const projBtn = document.getElementById("proj-btn");
+  const resumeBtn = document.getElementById("resume-btn");
 
   if (aboutBtn) {
     aboutBtn.addEventListener("click", () => {
@@ -102,10 +102,10 @@ const images = [
 
 // controls for image carousel
 
-const carouselImage = document.getElementById('carousel-image');
+const carouselImage = document.getElementById('carousel-img');
 const carouselContainer = document.getElementById('carousel');
 const indexElement = document.getElementById("image-index");
-const allImagesElement = document.getElementById("all-images");
+const allImagesElement = document.getElementById("image-count");
 
 indexElement.textContent = currentIndex + 1;
 allImagesElement.textContent = images.length;

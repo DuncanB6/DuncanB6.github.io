@@ -14,6 +14,11 @@ This project is a website for myself (Duncan Boyd) to showcase myself and some o
 
 - Font: FreeMono, monospace
 
+- Convert images to lower res: 
+for file in *.*; do
+  convert "$file" -resize 1024x768 -units PixelsPerInch -density 72 "${file%.*}.jpg"
+done
+
 ## Variable Naming
 
 ### CSS
@@ -32,7 +37,6 @@ This project is a website for myself (Duncan Boyd) to showcase myself and some o
 ## To Do
 
 - Reduce image resolution for better performance
-- Clean up spacing on sections
 - All buttons have same styling?
 - Add 3D printing image to about page carousel
 - Make sure carousel code is generic and reusable

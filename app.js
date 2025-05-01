@@ -90,14 +90,14 @@ document.addEventListener("DOMContentLoaded", () => {
 let currentIndex = 0;
 const images = [
     "images/about/IMG_7346.jpg",  
-    "images/about/IMG_5773.jpeg",
+    "images/about/IMG_5773.jpg",
     "images/about/IMG_0866.JPG",
     "images/about/IMG_2592.jpg",
-    "images/about/IMG_1545.jpeg",
-    "images/about/IMG_3250.jpeg",
-    "images/about/IMG_3331.jpeg",
+    "images/about/IMG_1545.jpg",
+    "images/about/IMG_3250.jpg",
+    "images/about/IMG_3331.jpg",
     "images/about/IMG_8486.jpg",
-    "images/about/whistler_run.jpeg",
+    "images/about/whistler_run.jpg",
 ];
 
 // controls for image carousel

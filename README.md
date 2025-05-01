@@ -14,6 +14,30 @@ This project is a website for myself (Duncan Boyd) to showcase myself and some o
 
 - Font: FreeMono, monospace
 
+- Convert images to lower res: 
+for file in *.*; do
+  convert "$file" -resize 1024x768 -units PixelsPerInch -density 72 "${file%.*}.jpg"
+done
+
+## Variable Naming
+
+### CSS
+
+- All variables: --variable-name
+
+### HTML
+
+- Class names: variable-name
+- IDs: variable-name
+
+### JS
+
+- All variables: variableName
+
+## To Do
+
+- Add 3D printing image to about page carousel
+- Make sure carousel code is generic and reusable
 
 
 

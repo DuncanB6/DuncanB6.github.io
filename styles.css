@@ -1,3 +1,11 @@
+/*
+Styles for the entire website, organized by pages and sections.
+
+Duncan Boyd
+duncan@wapta.ca
+May 1, 2025
+*/
+
 /* global document styling */
 
 * {
@@ -15,59 +23,82 @@
     --colour-white: #FFFFFF;
 }
 
+.generic-btn {
+    padding: 14px 32px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    margin-top: 2rem;
+    cursor: pointer;
+    outline: none;
+    color: var(--colour-black);
+    background: var(--colour-3);
+    transition: all 0.3s ease;
+}
+
+.generic-btn:hover {
+    background: var(--colour-2);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 480px) {
+
+    .generic-btn {
+        padding: 1rem 2rem;
+        margin: 2.5rem 0;
+    }
+}
+
 /* navigation bar */
 
-.navbar__container {
+.navbar-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
+    position: fixed;
+    width: 100%;
+    height: 5rem;
+    padding: 0 2rem;
     background: var(--colour-black);
     z-index: 1000;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 30px;
-    position: fixed;
     overflow: hidden;
 }
 
 #navbar-name {
-    color: var(--colour-black);
     cursor: pointer;
-    text-decoration: none;
     font-size: 2rem;
     font-weight: bold;
+    text-decoration: none;
+    color: var(--colour-black);
 }
 
-.navbar__menu {
+.navbar-menu {
     display: flex;
     justify-content: center;
-    list-style: none;
-    margin: 0;
-    margin-left: auto;
 }
 
-.navbar__item {
-    height: 80px;
+.navbar-item {
+    height: 5rem;
 }
 
-.navbar__links {
-    color: var(--colour-black);
-    text-decoration: none;
-    height: 100%;
-    padding: 0 1rem;
+.navbar-link {
     display: flex;
     align-items: center;
+    height: 100%;
+    padding: 0 1rem;
     font-size: 1rem;
     font-weight: bold;
+    text-decoration: none;
+    color: var(--colour-black);
 }
 
-.navbar__links:hover {
+.navbar-link:hover {
     color: var(--colour-3);
     transition: all 0.3s ease;
 }
 
-.navbar__toggle {
+.navbar-toggle {
     display: none;
 }
 
@@ -84,22 +115,22 @@
 
 @media screen and (max-width: 968px) {
 
-    .navbar__toggle {
+    .navbar-toggle {
         display: block;
         position: absolute;
-        right: 20px;
+        right: 1.5rem;
         top: 50%;
         transform: translateY(-50%);
         color: var(--colour-black);
         z-index: 10;
-        font-size: 2rem;
+        font-size: 1.75rem;
         border: none;
         background: none;
         cursor: pointer;
         padding: 0;
     }
 
-    .navbar__menu {
+    .navbar-menu {
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
@@ -115,7 +146,7 @@
         margin: 0;
     }
 
-    .navbar__menu.active {
+    .navbar-menu.active {
         right: 0;
         opacity: 1;
     }
@@ -124,30 +155,30 @@
         font-size: 1.5rem;
     }
 
-    .navbar__item {
-        width: 100%;
+    .navbar-item {
         display: flex;
         justify-content: center;
+        width: 100%;
     }
 
-    .navbar__links {
+    .navbar-link {
+        display: flex;
+        justify-content: center;
         text-align: center;
         padding: 1.5rem;
         width: 100%;
-        display: flex;
-        justify-content: center;
     }
 }
 
 /* --- home page --- */
 
-/* intro hero section */
+/* intro section */
 
-.hero {
+.intro {
     background-color: var(--colour-white);
 }
 
-.hero__container {
+.intro-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -158,144 +189,99 @@
     max-width: 1300px;
 }
 
-.hero__content {
+.intro-content {
     color: var(--colour-black);
 }
 
-.hero__content h1 {
+.intro-content h1 {
     font-size: 4rem;
 }
 
-.hero__content p {
+.intro-content p {
     margin-top: 1rem;
     font-size: 1.5rem;
 }
 
-.hero__btn {
-    font-size: 1rem;
-    background: var(--colour-3);
-    padding: 14px 32px;
-    border: none;
-    border-radius: 4px;
-    color: var(--colour-black);
-    margin-top: 2rem;
-    cursor: pointer;
-    outline: none;
-    transition: all 0.3s ease;
-}
-
-.hero__btn:hover {
-    background: var(--colour-2);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.hero__image {
+.intro-img-container {
     text-align: center;
 }
 
-#hero-img {
-    width: 70%;
-    height: 70%;
+#intro-img {
+    width: 65%;
+    height: 65%;
 }
 
 @media screen and (max-width: 768px) {
 
-    .hero__container {
+    .intro-container {
         grid-template-columns: 1fr;
         height: auto;
         padding: 120px 0;
     }
 
-    .hero__content {
+    .intro-content {
         text-align: center;
         margin-bottom: 4rem;
         padding: 0 32px;
     }
     
-    .hero__content h1 {
+    .intro-content h1 {
         font-size: 2.5rem;
         margin-top: 2rem;
     }
 
-    .hero__content p {
+    .intro-content p {
         font-size: 1.5rem;
+    }
+
+    #intro-img {
+        width: 50%;
+        height: 50%;
     }
 }
 
 @media screen and (max-width: 480px) {
 
-    .hero__container {
+    .intro-container {
         width: 100vw;
         padding: 60px 0;
     }
 
-    .hero__content h1 {
+    .intro-content h1 {
         font-size: 2rem;
         margin-top: 3rem;
-    }
-
-    .hero__btn {
-        padding: 12px 36px;
-        margin: 2.5rem 0;
     }
 }
 
 /* experiences and projects sections */
 
-.section {
+.overview {
     background-color: var(--colour-1);
 }
 
-.sect__container {
+.overview-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    margin: 0 auto;
     height: 70vh;
     width: 100%;
-    padding: 0 50px;
-    max-width: 1500px;
+    padding: 0 3rem;
 }
 
-.sect__content {
+.overview-content {
     color: var(--colour-black);
 }
 
-.sect__content h1 {
+.overview-content h1 {
     font-size: 2rem;
 }
 
-.sect__content p {
+.overview-content p {
     margin-top: 1rem;
     font-size: 1rem;
 }
 
-.sect__btn {
-    font-size: 1rem;
-    background: var(--colour-3);
-    padding: 14px 32px;
-    border: none;
-    border-radius: 4px;
-    color: var(--colour-black);
-    margin-top: 2rem;
-    cursor: pointer;
-    outline: none;
-    transition: all 0.3s ease;
-}
-
-.sect__btn:hover {
-    background: var(--colour-2);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* image divs defined seperately to allow for order changes */
-.exp__image {
-    text-align: center;
-}
-
-.proj__image {
+.overview-image {
     text-align: center;
 }
 
@@ -312,48 +298,53 @@
 
 @media screen and (max-width: 768px) {
 
-    /* change order of proj section image in mobile mode (pic above) */
-    .proj__image {
+    /* change order of image in mobile mode (pic above text) */
+    .overview-image {
         order: -1;
     }
 
-    .sect__container {
+    .overview-container {
         grid-template-columns: 1fr;
         height: auto;
-        padding: 120px 0;
+        padding: 2rem 0;
     }
 
-    .sect__content {
+    .overview-content {
         text-align: center;
-        margin-bottom: 4rem;
-        padding: 0 32px;
+        padding: 0 2rem;
     }
     
-    .sect__content h1 {
+    .overview-content h1 {
         font-size: 2.5rem;
         margin-top: 2rem;
     }
 
-    .sect__content p {
+    .overview-content p {
         font-size: 1.5rem;
+    }
+
+    /* images defined seperately to allow for different scaling */
+    #exp-img {
+        width: 65%;
+        height: 65%;
+    }
+
+    #proj-img {
+        width: 65%;
+        height: 65%;
     }
 }
 
 @media screen and (max-width: 480px) {
 
-    .sect__container {
+    .overview-container {
         width: 100vw;
-        padding: 60px 0;
+        padding: 2rem 0;
     }
 
-    .sect__content h1 {
+    .overview-content h1 {
         font-size: 2rem;
         margin-top: 3rem;
-    }
-
-    .sect__btn {
-        padding: 12px 36px;
-        margin: 2.5rem 0;
     }
 }
 
@@ -363,11 +354,12 @@
     background-color: var(--colour-1);
 }
 
-.blurb__content {
+.blurb-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     margin: 0 auto;
     min-height: 60vh;
     padding-top: 100px;
@@ -375,60 +367,35 @@
     width: 90%;
     max-width: 1500px;
     color: var(--colour-black);
-    text-align: center;
 }
 
-.blurb__content h1 {
+.blurb-content h1 {
     font-size: 2.5rem;
 }
 
-.blurb__content p {
+.blurb-content p {
     margin-top: 1rem;
     font-size: 1.5rem;
 }
 
-.resume__btn {
-    font-size: 1rem;
-    background: var(--colour-3);
-    padding: 14px 32px;
-    border: none;
-    border-radius: 4px;
-    color: var(--colour-black);
-    margin-top: 2rem;
-    cursor: pointer;
-    outline: none;
-    transition: all 0.3s ease;
-}
-
-.resume__btn:hover {
-    background: var(--colour-2);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
 @media screen and (max-width: 768px) {
 
-    .blurb__content {
+    .blurb-content {
         margin-bottom: 4rem;
         height: 100%;
         width: 100%;
-        padding-top: 100px;
-        padding-bottom: 50px;
+        padding-top: 4rem;
+        padding-bottom: 1rem;
         margin-top: 3rem;
     }
 
-    .blurb__content h1 {
+    .blurb-content h1 {
         margin-top: 1.5rem;
         font-size: 1.5rem;
     }
 
-    .blurb__content p {
+    .blurb-content p {
         font-size: 1rem;
-    }
-
-    .resume__btn {
-        padding: 12px 36px;
-        margin: 2.5rem 0;
     }
 }
 
@@ -437,6 +404,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 1rem;
     margin: 0 auto;
     min-height: 70vh;
     width: 100%;
@@ -445,31 +413,28 @@
     text-align: center;
 }
 
-.carousel__body {
+.carousel-body {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    height: 100%;
     width: 95%;
-    padding: 0 50px;
     max-width: 1000px;
+    padding: 0 50px;
     position: relative;
 }
 
-.carousel__images {
+.carousel-images {
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 80%;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 50px 0;
 }
 
 .carousel img {
     height: 40vh;
-    transition: all 0.3s ease;
     object-fit: contain;
+    transition: 0.3s ease;
 }
 
 .controls {
@@ -481,34 +446,33 @@
     transform: translateY(-50%);
 }
 
-.carousel__btn {
+.carousel-btn {
     display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--colour-3);
     color: var(--colour-black);
     border: none;
     border-radius: 4px;
-    padding: 10px 10px;
+    padding: 9px 10px 10px;
     font-size: 20px;
     cursor: pointer;
     outline: none;
-    transition: background-color 0.3s;
+    transition: 0.3s ease;
 }
 
-button:hover {
+.carousel-btn:hover {
     background-color: var(--colour-2);
 }
 
 @media screen and (max-width: 768px) {
-
     .carousel img {
         height: 60vh;
     }
 
     .controls {
-        padding-top: 50px;
-        padding-bottom: 50px;
+        padding: 3rem 0;
     }
-
 }
 
 @media screen and (max-width: 480px) {
@@ -519,66 +483,48 @@ button:hover {
 
 /* footer section */
 
-.footer__container {
-    background-color: var(--colour-2);
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    padding-left: 2.5rem;
-    padding-right: auto;
+.footer-container {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+    background-color: var(--colour-2);
+    padding: 2rem 3rem;
 }
 
 #footer-logo {
-    color: var(--colour-black);
     display: flex;
     align-items: center;
+    font-size: 1.75rem;
+    color: var(--colour-black);
     text-decoration: none;
-    font-size: 2rem;
 }
 
-.social__media {
-    max-width: 1000px;
-    width: 100%;
-}
-
-.social__media-wrap {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-}
-
-.website__rights {
+.website-rights {
     color: var(--colour-black);
 }
 
-.social__icons {
+.social-icons {
     display: flex;
     justify-content: space-between;
     width: 240px;
 }
 
-.social__icon-link {
+.social-icon-link {
+    font-size: 1.5rem;
     color: var(--colour-black);
-    font-size: 24px;
 }
 
 @media screen and (max-width: 820px) {
 
-    .social__media-wrap {
+    .footer-container {
         flex-direction: column;
     }
 
-    #footer-logo, .website__rights {
+    #footer-logo, .website-rights {
         margin-bottom: 1rem;
     }
-}
 
-@media screen and (max-width: 480px) {
-
-    .social__media {
+    .footer-container {
         text-align: center;
     }
 }

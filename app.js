@@ -1,3 +1,11 @@
+/*
+Javascript functions for website functionality
+
+Duncan Boyd
+duncan@wapta.ca
+Apr 30, 2025
+*/
+
 
 // load header and footer
 document.addEventListener("DOMContentLoaded", () => {
@@ -11,7 +19,6 @@ document.addEventListener("DOMContentLoaded", () => {
       console.error("Error loading header:", error);
     });
 
-  // Load and insert the footer
   fetch("includes/footer.html")
     .then(response => response.text())
     .then(data => {
@@ -26,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
 function initializeHeaderFunctions() {
   // mobile menu button toggle
   const menu = document.querySelector("#mobile-menu");
-  const menuLinks = document.querySelector(".navbar__menu");
+  const menuLinks = document.querySelector(".navbar-menu");
   if (menu && menuLinks) {
     menu.addEventListener("click", function () {
       menu.classList.toggle("is-active");
@@ -48,12 +55,12 @@ function initializeFooterFunctions() {
     }
 }
 
-// button commands
+// button commands for all pages
 document.addEventListener("DOMContentLoaded", () => {
-  const aboutBtn = document.getElementById("aboutBtn");
-  const expBtn = document.getElementById("expBtn");
-  const projBtn = document.getElementById("projBtn");
-  const resumeBtn = document.getElementById("resumeBtn");
+  const aboutBtn = document.getElementById("about-btn");
+  const expBtn = document.getElementById("exp-btn");
+  const projBtn = document.getElementById("proj-btn");
+  const resumeBtn = document.getElementById("resume-btn");
 
   if (aboutBtn) {
     aboutBtn.addEventListener("click", () => {
@@ -83,21 +90,22 @@ document.addEventListener("DOMContentLoaded", () => {
 let currentIndex = 0;
 const images = [
     "images/about/IMG_7346.jpg",  
-    "images/about/IMG_5773.jpeg",
-    "images/about/IMG_0866.JPG",
+    "images/about/IMG_5773.jpg",
+    "images/about/IMG_0866.jpg",
     "images/about/IMG_2592.jpg",
-    "images/about/IMG_1545.jpeg",
-    "images/about/IMG_3250.jpeg",
-    "images/about/IMG_3331.jpeg",
+    "images/about/IMG_1545.jpg",
+    "images/about/IMG_3250.jpg",
+    "images/about/IMG_3331.jpg",
     "images/about/IMG_8486.jpg",
-    "images/about/whistler_run.jpeg",
+    "images/about/whistler_run.jpg",
 ];
 
+// controls for image carousel
 
-const carouselImage = document.getElementById('carousel-image');
+const carouselImage = document.getElementById('carousel-img');
 const carouselContainer = document.getElementById('carousel');
-const indexElement = document.getElementById("image_index");
-const allImagesElement = document.getElementById("all_images");
+const indexElement = document.getElementById("image-index");
+const allImagesElement = document.getElementById("image-count");
 
 indexElement.textContent = currentIndex + 1;
 allImagesElement.textContent = images.length;
@@ -117,7 +125,7 @@ function prevImage() {
     updateCarouselImage();
 }
 
-
+// automatic scroll for carousel
 let carouselInterval = setInterval(nextImage, 2000);
 
 // stop carousel if mouse is over it

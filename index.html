@@ -1,3 +1,11 @@
+<!-- 
+ Main home page, provides intro and links to other pages.
+ 
+ Duncan Boyd
+ duncan@wapta.ca
+ May 1, 2025
+ -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,47 +19,55 @@
     <div id="header"></div>
 
     <main>
-        <section class="hero">
-            <div class="hero__container">
-                <div class="hero__content">
+        <section class="intro">
+            <div class="intro-container">
+                <div class="intro-content">
                     <h1>Welcome!</h1>
+
                     <p>Hi, I'm Duncan, a UBC engineering graduate with a passion for the outdoors and electronics. Learn more about me at the link below!</p>
-                    <button class="hero__btn" id="aboutBtn">About Me</button>
+
+                    <button class="generic-btn" id="about-btn">About Me</button>
                 </div>
-                <div class="hero__image">
-                    <img id="hero-img" src="/images/headshot.jpeg" alt="Headshot of Duncan" />
+                
+                <div class="intro-img-container">
+                    <img id="intro-img" src="/images/headshot.jpg" alt="Headshot of Duncan" />
                 </div>
             </div>
         </section>
 
-        <section class="section">
-            <div class="sect__container">
-                <div class="exp__image">
-                    <img id="exp-img" src="/images/ikomed.jpeg" alt="Team picture at Ikomed" />
+        <section class="overview">
+            <div class="overview-container">
+                <div class="overview-image">
+                    <img id="exp-img" src="/images/ikomed.jpg" alt="Team picture at Ikomed" />
                 </div>
-                <div class="sect__content">
+
+                <div class="overview-content">
                     <h1>What I've Been Up To</h1>
+
                     <p>Check out some of my experiences with work and clubs by clicking the button below!</p>
-                    <button class="sect__btn" id="expBtn">My Experiences</button>
+
+                    <button class="generic-btn" id="exp-btn">My Experiences</button>
                 </div>
             </div>
-        </section>
 
-        <section class="section">
-            <div class="sect__container">
-                <div class="sect__content">
+            <div class="overview-container">
+                <div class="overview-content">
                     <h1>Tinkering and Design</h1>
+
                     <p>I've occupied myself with a few fun personal projects. Check out my work by clicking the button below!</p>
-                    <button class="sect__btn" id="projBtn">My Projects</button>
+
+                    <button class="generic-btn" id="proj-btn">My Projects</button>
                 </div>
-                <div class="proj__image">
-                    <img id="proj-img" src="/images/dashlight.jpeg" alt="Team picture at Ikomed" />
+
+                <div class="overview-image">
+                    <img id="proj-img" src="/images/dashlight.jpg" alt="Image of Dashlight project" />
                 </div>
             </div>
         </section>
-
-        <div id="footer"></div>
     </main>
+
+    <div id="footer"></div>
+
     <script src="app.js"></script>
 </body>
 </html>

@@ -29,5 +29,10 @@ This project is a website for myself (Duncan Boyd) to showcase myself and some o
 
 - All variables: variableName
 
+## To Do
+
+- Reduce image resolution for better performance
+- Clean up spacing on sections
+
 
 

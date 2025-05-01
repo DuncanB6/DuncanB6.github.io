@@ -372,6 +372,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     margin: 0 auto;
     min-height: 60vh;
     padding-top: 100px;
@@ -379,7 +380,6 @@
     width: 90%;
     max-width: 1500px;
     color: var(--colour-black);
-    text-align: center;
 }
 
 .blurb-content h1 {
@@ -392,15 +392,15 @@
 }
 
 .resume-btn {
-    font-size: 1rem;
-    background: var(--colour-3);
     padding: 14px 32px;
+    font-size: 1rem;
     border: none;
     border-radius: 4px;
-    color: var(--colour-black);
     margin-top: 2rem;
     cursor: pointer;
     outline: none;
+    background: var(--colour-3);
+    color: var(--colour-black);
     transition: all 0.3s ease;
 }
 
@@ -416,8 +416,8 @@
         margin-bottom: 4rem;
         height: 100%;
         width: 100%;
-        padding-top: 100px;
-        padding-bottom: 50px;
+        padding-top: 4rem;
+        padding-bottom: 1rem;
         margin-top: 3rem;
     }
 
@@ -441,6 +441,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 1rem;
     margin: 0 auto;
     min-height: 70vh;
     width: 100%;
@@ -454,10 +455,9 @@
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    height: 100%;
     width: 95%;
-    padding: 0 50px;
     max-width: 1000px;
+    padding: 0 50px;
     position: relative;
 }
 
@@ -465,15 +465,13 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 80%;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 50px 0;
 }
 
 .carousel img {
     height: 40vh;
-    transition: all 0.3s ease;
     object-fit: contain;
+    transition: 0.3s ease;
 }
 
 .controls {
@@ -487,15 +485,17 @@
 
 .carousel-btn {
     display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--colour-3);
     color: var(--colour-black);
     border: none;
     border-radius: 4px;
-    padding: 10px 10px;
+    padding: 9px 10px 10px;
     font-size: 20px;
     cursor: pointer;
     outline: none;
-    transition: background-color 0.3s;
+    transition: 0.3s ease;
 }
 
 .carousel-btn:hover {
@@ -503,16 +503,13 @@
 }
 
 @media screen and (max-width: 768px) {
-
     .carousel img {
         height: 60vh;
     }
 
     .controls {
-        padding-top: 50px;
-        padding-bottom: 50px;
+        padding: 3rem 0;
     }
-
 }
 
 @media screen and (max-width: 480px) {

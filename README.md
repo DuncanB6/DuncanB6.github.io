@@ -35,6 +35,7 @@ This project is a website for myself (Duncan Boyd) to showcase myself and some o
 - Clean up spacing on sections
 - All buttons have same styling?
 - Add 3D printing image to about page carousel
+- Make sure carousel code is generic and reusable
 
 
 

@@ -14,11 +14,23 @@ async function renderProjects() {
       const project = await loadProjectData(id);
       const item = document.createElement("div");
       item.innerHTML = `
-        <a href="item.html?id=${project.id}">
-          <img src="${project.images[0]}" alt="${project.title}" width="200"/>
-          <h3 id="project-title">${project.title}</h3>
-          <p>${project.description}</p>
-        </a>
+        <div class="item-container">
+            <div class="item-box">
+                <div class="item-image">
+                    <a href="item.html?id=${project.id}">
+                        <img src="${project.images[0]}" alt="${project.title}" width="200"/>
+                    </a>
+                </div>
+
+                <div class="item-content">
+                    <a id="item-link" href="item.html?id=${project.id}">
+                        <h1 id="project-title">${project.title}</h3>
+                    </a>
+
+                    <p>${project.description}</p>
+                </div>
+            </div>
+        </div>
       `;
       projectListDiv.appendChild(item);
     } catch (error) {

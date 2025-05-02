@@ -1,0 +1,15 @@
+{
+    "id": "elec442",
+    "title": "Mapping Roomba",
+    "description": "A Roomba robot that can map and navigate rooms.",
+    "fullDescription": "This project was part of my ELEC 442 robotics course at UBC. With a group, we used a Raspberry Pi, iRobot Create 2, STM32, and LiDAR sensor to map an unknown room and navigate between two points in the room. I focussed on the low level API used to control the Roomba's movements and sensor readouts, as well as the interface between the Raspbarry Pi and a local computer for remote control.",
+    "images": [
+      "images/projects/elec442/IMG_7086.jpg",
+      "images/projects/elec442/IMG_7100.jpg",
+      "images/projects/elec442/IMG_6691.jpg"
+    ],
+    "links": {
+      "demo video": "https://drive.google.com/file/d/1tJhGRgOOeGb8e3tL_6kAtU5V8bZHjj12/view"
+    }
+  }
+  

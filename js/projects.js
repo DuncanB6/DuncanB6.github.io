@@ -1,7 +1,7 @@
 const projectListDiv = document.getElementById("project-list");
 
 // Static list of project IDs
-const projectIds = ['project1', 'project2']; // Add more as needed
+const projectIds = ['3dprinting', 'billboard', 'capstone', 'dashlight', 'elec291', 'elec391', 'elec442']; // Add more as needed
 
 async function loadProjectData(id) {
   const res = await fetch(`projects/${id}.json`);
@@ -23,7 +23,7 @@ async function renderProjects() {
                 </div>
 
                 <div class="item-content">
-                    <a id="item-link" href="item.html?id=${project.id}">
+                    <a id="item-link" href="project.html?id=${project.id}">
                         <h1 id="project-title">${project.title}</h3>
                     </a>
 

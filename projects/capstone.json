@@ -1,0 +1,24 @@
+{
+    "id": "capstone",
+    "title": "Lifepulse",
+    "description": "A heart rate detection device for use during cardiac arrest.",
+    "fullDescription": "The Lifepulse pulse detection device was my capstone project while at UBC. This device is designed to stick on to your body and determine whether or not you have a pulse, as well as your heart rate. This can save time during CPR, potentially saving lives. I focused on the signal processing algorithm which was used to determine whether or not a given real-time signal had a human pulse present. Additionally, I worked on the testing, tuning, and assembly of both prototypes and our final device. Learn more at the links below.",
+    "images": [
+      "images/projects/capstone/IMG_7104.jpg", 
+      "images/projects/capstone/group.jpg", 
+      "images/projects/capstone/IMG_6500.jpg", 
+      "images/projects/capstone/IMG_6763.jpg", 
+      "images/projects/capstone/IMG_2677.jpg", 
+      "images/projects/capstone/IMG_6322.jpg", 
+      "images/projects/capstone/IMG_6828.jpg",
+      "images/projects/capstone/IMG_6822.jpg",
+      "images/projects/capstone/IMG_6729.jpg",
+      "images/projects/capstone/IMG_6531.jpg",
+      "images/projects/capstone/IMG_6912.jpg"
+    ],
+    "links": {
+      "machine learning pulse detection github": "https://github.com/DuncanB6/ml_pulse_detection",
+      "demo video": "https://www.youtube.com/watch?v=TYukOChfQew&list=PLjFm8PBGO0F9-S9ZXfztxieskNTFpkMEe&index=10"
+    }
+  }
+  

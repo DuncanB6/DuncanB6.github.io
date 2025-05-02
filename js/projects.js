@@ -17,7 +17,7 @@ async function renderProjects() {
         <div class="item-container">
             <div class="item-box">
                 <div class="item-image">
-                    <a href="item.html?id=${project.id}">
+                    <a href="project.html?id=${project.id}">
                         <img src="${project.images[0]}" alt="${project.title}" width="200"/>
                     </a>
                 </div>

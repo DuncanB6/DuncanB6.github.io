@@ -18,12 +18,12 @@ async function renderExperiences() {
             <div class="item-box">
                 <div class="item-image">
                     <a href="experience.html?id=${experience.id}">
-                        <img src="${experience.images[0]}" alt="${experience.title}" width="200"/>
+                        <img class="item-img" src="${experience.images[0]}" alt="${experience.title}" width="200"/>
                     </a>
                 </div>
 
                 <div class="item-content">
-                    <a id="item-link" href="item.html?id=${experience.id}">
+                    <a id="item-link" href="experience.html?id=${experience.id}">
                         <h1 id="experience-title">${experience.title}</h3>
                     </a>
 

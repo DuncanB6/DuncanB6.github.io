@@ -1,0 +1,23 @@
+{
+    "id": "aerodesign",
+    "title": "UBC Aerodesign",
+    "description": "Designing landing gear and sensors for an RC plane.",
+    "fullDescription": "During my three years at UBC Aerodesign, I helped design a large RC airplane with the objective of competing in design competitions. I learned how to use Solidworks for design and FEA testing while building landing gear for the plane, and later helped design the onboard sensors that our plane used for autonomous flight.",
+    "images": [
+      "images/experiences/aerodesign/IMG_3071.jpg",
+      "images/experiences/aerodesign/IMG_1419.jpg",
+      "images/experiences/aerodesign/IMG_1423.jpg",
+      "images/experiences/aerodesign/IMG_2990.jpg",
+      "images/experiences/aerodesign/IMG_4554.jpg",
+      "images/experiences/aerodesign/IMG_3102.jpg",
+      "images/experiences/aerodesign/IMG_4790.jpg",
+      "images/experiences/aerodesign/IMG_5773.jpg",
+      "images/experiences/aerodesign/fly.jpg",
+      "images/experiences/aerodesign/IMG_3075.jpg",
+      "images/experiences/aerodesign/IMG_4790.jpg"
+    ],
+    "links": {
+      "website": "https://www.ubcaerodesign.com"
+    }
+  }
+  

@@ -1,0 +1,17 @@
+{
+    "id": "3dprinting",
+    "title": "3D Printing",
+    "description": "Many small design and 3D printing projects, as well as printer maintenance.",
+    "fullDescription": "I began 3D printing in 2021 when I got a Makerbot Replicator printer courtesy of UBC Aerodesign. I enjoyed learning design and overcoming the limitations of that printer as I made various useful and decorational projects. Since then, I've upgraded to a Prusa MK3S+, which has allowed me to improve the quality of my prints as well as expand my choice of materials. Through a variety of small projects, I've learned to design parts in Solidworks, Onshape, Fusion 360, and FreeCAD, as well as manufacture projects using PLA, ABS, ASA, and TPU.",
+    "images": [
+      "images/projects/3dprinting/IMG_5887.jpg",
+      "images/projects/3dprinting/IMG_5959.jpg",
+      "images/projects/3dprinting/IMG_6185.jpg",
+      "images/projects/3dprinting/IMG_6250.jpg",
+      "images/projects/3dprinting/IMG_6670.jpg",
+      "images/projects/3dprinting/plug.jpg"
+    ],
+    "links": {
+    }
+  }
+  

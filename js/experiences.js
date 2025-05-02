@@ -1,7 +1,7 @@
 const experienceListDiv = document.getElementById("experience-list");
 
 // Static list of project IDs
-const experienceIds = ['experience1', 'experience2']; // Add more as needed
+const experienceIds = ['aerodesign', 'cellcentric', 'ikomed', 'redcross', 'uofc']; // Add more as needed
 
 async function loadExperienceData(id) {
   const res = await fetch(`experiences/${id}.json`);

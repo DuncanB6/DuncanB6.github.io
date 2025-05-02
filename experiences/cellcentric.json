@@ -1,0 +1,21 @@
+{
+    "id": "cellcentric",
+    "title": "Cellcentric",
+    "description": "Co-op position manufacturing hydrogen fuel cells.",
+    "fullDescription": "I worked for eight months at Cellcentric as a manufacturing intern. During my time, I worked with fellow co-op students and my supervisors to improve the manufacture and quality control of hydrogen fuel cells used for long haul trucking. I designed testing jigs, developed test methods, analyzed material data, and worked on a computer vision assisted quality control system.",
+    "images": [
+      "images/experiences/cellcentric/cellcentric.jpg",
+      "images/experiences/cellcentric/IMG_3250.jpg",
+      "images/experiences/cellcentric/computer.jpg",
+      "images/experiences/cellcentric/IMG_3967.jpg",
+      "images/experiences/cellcentric/IMG_4769.jpg",
+      "images/experiences/cellcentric/IMG_4909.jpg",
+      "images/experiences/cellcentric/IMG_4913.jpg",
+      "images/experiences/cellcentric/IMG_4915.jpg",
+      "images/experiences/cellcentric/shear.jpg"
+    ],
+    "links": {
+      "website": "https://www.cellcentric.net/en-us"
+    }
+  }
+  

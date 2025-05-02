@@ -37,7 +37,7 @@ done
 ## To Do
 
 - Add 3D printing image to about page carousel
-- Make sure carousel code is generic and reusable
+- DRY out code
 
 
 

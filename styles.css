@@ -481,6 +481,59 @@ May 1, 2025
     }
 }
 
+/* --- projects page --- */
+
+.item-container {
+    padding: 3rem 1rem;
+    width: 100%;
+    background-color: var(--colour-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+    width: 50%;
+    border-radius: 20px;
+    background-color: var(--colour-2);
+}
+
+.item-content {
+    color: var(--colour-black);
+}
+
+#item-link {
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--colour-black);
+}
+
+.item-content h1 {
+    font-size: 2rem;
+}
+
+.item-content p {
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.item-image {
+    text-align: center;
+}
+
+/* --- item page --- */
+
+.item-links {
+    padding-top: 2rem;
+}
+
 /* footer section */
 
 .footer-container {

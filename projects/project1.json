@@ -1,0 +1,15 @@
+{
+    "id": "project1",
+    "title": "Cool Web App",
+    "description": "A quick preview of my web app.",
+    "fullDescription": "This is a more detailed description of my project. It uses HTML, CSS, and JS to build a responsive web app.",
+    "images": [
+      "images/dashlight.jpg",
+      "images/headshot.jpg"
+    ],
+    "links": {
+      "github": "https://github.com/yourusername/project1",
+      "live": "https://yourliveapp.com"
+    }
+  }
+  

@@ -36,8 +36,5 @@ done
 
 ## To Do
 
-- Add 3D printing image to about page carousel
-- Projects and experiences should be sorted by time completed
-
 
 

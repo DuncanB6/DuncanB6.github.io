@@ -3,7 +3,7 @@
     "title": "UofC Summer Student",
     "date": "2022-08-30",
     "description": "Researching the use of machine learning to improve MRI imaging.",
-    "fullDescription": "During my four month term at the University of Calgary, I researched a novel method of reconstructing MRI images of the brain using a convolutional neural network. I tested a methods which considered the complex nature of MRI images, and presented by results through both posters and talks.",
+    "fullDescription": "During my four month term at the University of Calgary, I did research on a novel method of reconstructing MRI images of the brain using a convolutional neural network. I tested a methods which considered the complex nature of MRI images, and presented by results through both posters and talks.",
     "images": [
       "images/experiences/uofc/unet.jpg",
       "images/experiences/uofc/conv.jpg",

@@ -1,7 +1,15 @@
+/*
+Javascript for the experiences page. Similar to projects.js.
+
+Duncan Boyd
+duncan@wapta.ca
+May 2, 2025
+*/
+
 const experienceListDiv = document.getElementById("experience-list");
 
-// Static list of project IDs
-const experienceIds = ['aerodesign', 'cellcentric', 'ikomed', 'redcross', 'uofc']; // Add more as needed
+// static list of project IDs
+const experienceIds = ['aerodesign', 'cellcentric', 'ikomed', 'redcross', 'uofc'];
 
 async function loadExperienceData(id) {
   const res = await fetch(`experiences/${id}.json`);
@@ -20,7 +28,7 @@ async function renderExperiences() {
     }
   }
 
-  // Sort experiences by date descending (most recent first)
+  // sort experiences by date descending (most recent first)
   experiences.sort((a, b) => new Date(b.date) - new Date(a.date));
 
   for (const experience of experiences) {
@@ -47,6 +55,5 @@ async function renderExperiences() {
     experienceListDiv.appendChild(item);
   }
 }
-
 
 renderExperiences();

@@ -484,7 +484,7 @@ May 1, 2025
 /* --- projects and experiences pages --- */
 
 .item-container {
-    padding: 3rem 1rem;
+    padding: 1rem 1rem;
     width: 100%;
     background-color: var(--colour-white);
     display: flex;

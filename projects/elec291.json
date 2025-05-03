@@ -1,6 +1,7 @@
 {
     "id": "elec291",
     "title": "Coin Collecting Robot",
+    "date": "2022-04-30",
     "description": "A robot that can find and collect coins, as well as draw.",
     "fullDescription": "This robot was part of my ELEC 291 design studio at UBC. As a team, we designed a microcontroller based robot that could detect coins using a metal detector, detect AC current sources (wires), and pick up coins using an electromagnet. Additionally, the robot was outfitted with a pen to draw text. I focused on the module level design and testing of the various sensors and manipulators present on the robot.",
     "images": [

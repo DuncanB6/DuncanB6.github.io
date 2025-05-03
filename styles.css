@@ -364,7 +364,7 @@ May 1, 2025
     min-height: 60vh;
     padding-top: 100px;
     padding-bottom: 60px;
-    width: 90%;
+    width: 85%;
     max-width: 1500px;
     color: var(--colour-black);
 }
@@ -481,10 +481,10 @@ May 1, 2025
     }
 }
 
-/* --- projects page --- */
+/* --- projects and experiences pages --- */
 
 .item-container {
-    padding: 3rem 1rem;
+    padding: 1rem 1rem;
     width: 100%;
     background-color: var(--colour-white);
     display: flex;
@@ -500,11 +500,12 @@ May 1, 2025
     padding: 1rem 0;
     width: 50%;
     border-radius: 20px;
-    background-color: var(--colour-2);
+    background-color: var(--colour-1);
 }
 
 .item-content {
     color: var(--colour-black);
+    padding: 1rem 1rem;
 }
 
 #item-link {
@@ -526,6 +527,52 @@ May 1, 2025
 
 .item-image {
     text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+
+    .item-box {
+        grid-template-columns: 1fr;
+        height: auto;
+        padding: 2rem 0;
+        width: 80%;
+    }
+
+    .item-content {
+        text-align: center;
+        padding: 0 2rem;
+    }
+    
+    .item-content h1 {
+        font-size: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .item-content p {
+        font-size: 1rem;
+    }
+
+    .item-img {
+        width: 65%;
+        height: 65%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .item-container {
+        width: 100vw;
+        padding: 2rem 0;
+    }
+
+    .item-content h1 {
+        font-size: 1rem;
+        margin-top: 3rem;
+    }
+
+    .item-content p {
+        font-size: 0.75rem;
+    }
 }
 
 /* --- item page --- */

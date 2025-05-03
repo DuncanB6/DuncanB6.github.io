@@ -1,6 +1,7 @@
 {
     "id": "dashlight",
     "title": "Dashlight",
+    "date": "2024-12-30",
     "description": "A screen to display information from my car's computer.",
     "fullDescription": "This project involved the design of a PCB-based microcontroller to read information from my car's OBD2 port and make that information available on a 7-segment display. Dashlight presented challenges such as PCB design, interface with various peripherals, real-time communications, and hardware management. Although it may not be perfect, it's still installed in my car so I can read out information like gas mileage, temperature, and more.",
     "images": [

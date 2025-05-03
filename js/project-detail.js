@@ -1,9 +1,16 @@
-// carousel.js
+/*
+Javascript to create pages for each individual experience with details. Similar to project-detail.js.
+
+Duncan Boyd
+duncan@wapta.ca
+May 2, 2025
+*/
+
 let images = [];
 let currentIndex = 0;
 let carouselInterval = null;
 
-// Called after dynamic HTML is rendered
+// called after dynamic HTML is rendered
 function setupCarousel() {
   const carouselImage = document.getElementById('carousel-img');
   const carouselContainer = document.getElementById('carousel');
@@ -38,7 +45,6 @@ function setupCarousel() {
     carouselInterval = setInterval(window.nextImage, 2000);
   });
 
-  // Hook up buttons if using DOM events (alternative to inline onclick)
   document.getElementById("prev-btn").addEventListener("click", window.prevImage);
   document.getElementById("next-btn").addEventListener("click", window.nextImage);
 }
@@ -74,6 +80,7 @@ async function renderProjectDetail() {
       <section class="blurb">
         <div class="blurb-content">
           <h1>${project.title}</h1>
+          <h3>${project.date}</h3>
           <p>${project.fullDescription}</p>
           <div class="item-links">${links}</div>
         </div>
@@ -97,12 +104,11 @@ async function renderProjectDetail() {
       </section>
     `;
 
-    setupCarousel(); // Only now is the DOM ready
+    setupCarousel();
   } catch (error) {
     console.error("Failed to load project:", error);
     container.innerText = "Error loading project.";
   }
 }
 
-// Run this on page load
 renderProjectDetail();

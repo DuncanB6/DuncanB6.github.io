@@ -1,10 +1,12 @@
 {
     "id": "billboard",
     "title": "Billboard",
+    "date": "2025-04-30",
     "description": "The website you're on right now!",
     "fullDescription": "This is a bit recursive! Billboard is the name for this website, which I've designed as a personal profile for myself. Billboard is written using HTML, CSS, and JS from scratch (albeit with some tutorials) as a learning experiment. Some exciting features include a custom photo carousel and dynamic project and experience sections, powered by Javascript. Check out the GitHub below for some more information!",
     "images": [
-      "images/projects/billboard/home.jpg"
+      "images/projects/billboard/home.jpg",
+      "images/projects/billboard/web.jpg"
     ],
     "links": {
       "github": "https://github.com/DuncanB6/DuncanB6.github.io",

@@ -1,3 +1,11 @@
+/*
+Javascript for the carousel on the about page.
+
+Duncan Boyd
+duncan@wapta.ca
+May 2, 2025
+*/
+
 let currentIndex = 0;
 const images = [
     "images/about/IMG_7346.jpg",  
@@ -12,7 +20,6 @@ const images = [
 ];
 
 // controls for image carousel
-
 const carouselImage = document.getElementById('carousel-img');
 const carouselContainer = document.getElementById('carousel');
 const indexElement = document.getElementById("image-index");

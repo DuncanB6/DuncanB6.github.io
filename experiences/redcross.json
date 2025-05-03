@@ -1,6 +1,7 @@
 {
     "id": "redcross",
     "title": "UBC Red Cross Club",
+    "date": "2025-04-30",
     "description": "Treasurer and marketing director for the UBC Red Cross.",
     "fullDescription": "In my first year at the UBC Red Cross Club, I acted as treasurer, providing budgets and managing the spending of the club. During my second year, I took on the role of marketing director, where I co-lead a small team of students to make promotional materials such as social media posts for the club. Additionally, I build a website for UBCRCC, which you can find below.",
     "images": [
@@ -12,7 +13,7 @@
       "images/experiences/redcross/insta.jpg"
     ],
     "links": {
-      "website": "https://www.ubcredcrossclub.ca"
+      "ubcrcc website": "https://www.ubcredcrossclub.ca"
     }
   }
   

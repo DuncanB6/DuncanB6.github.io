@@ -535,6 +535,7 @@ May 1, 2025
         grid-template-columns: 1fr;
         height: auto;
         padding: 2rem 0;
+        width: 80%;
     }
 
     .item-content {
@@ -543,12 +544,12 @@ May 1, 2025
     }
     
     .item-content h1 {
-        font-size: 2.5rem;
+        font-size: 1.5rem;
         margin-top: 2rem;
     }
 
     .item-content p {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     .item-img {
@@ -565,8 +566,12 @@ May 1, 2025
     }
 
     .item-content h1 {
-        font-size: 2rem;
+        font-size: 1rem;
         margin-top: 3rem;
+    }
+
+    .item-content p {
+        font-size: 0.75rem;
     }
 }
 

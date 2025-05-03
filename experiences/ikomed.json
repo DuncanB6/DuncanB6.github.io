@@ -1,7 +1,7 @@
 {
     "id": "ikomed",
     "title": "Ikomed",
-    "date": "2024-07-30",
+    "date": "2024-08-30",
     "description": "Co-op position writing softare and firmware for medical device testing.",
     "fullDescription": "I worked for eight months at Ikomed as a software and firmware intern. While at Ikomed, I wrote Python tools for the control of novel medical devices, as well as scripts for the analysis of simulation and test data. Additionally, I worked on the firmware for embedded BLE sensors used during testing, as well as control software for these sensors.",
     "images": [

@@ -37,11 +37,7 @@ done
 ## To Do
 
 - Add 3D printing image to about page carousel
-- DRY out code
 - Projects and experiences should be sorted by time completed
-- Clean up spacing
-- Make projects and experiences sections work with mobile/other screens
-- Link billboard project footer to billboard project description
 
 
 

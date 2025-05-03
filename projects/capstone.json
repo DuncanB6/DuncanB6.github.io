@@ -1,6 +1,7 @@
 {
     "id": "capstone",
     "title": "Lifepulse",
+    "date": "2024-05-30",
     "description": "A heart rate detection device for use during cardiac arrest.",
     "fullDescription": "The Lifepulse pulse detection device was my capstone project while at UBC. This device is designed to stick on to your body and determine whether or not you have a pulse, as well as your heart rate. This can save time during CPR, potentially saving lives. I focused on the signal processing algorithm which was used to determine whether or not a given real-time signal had a human pulse present. Additionally, I worked on the testing, tuning, and assembly of both prototypes and our final device. Learn more at the links below.",
     "images": [

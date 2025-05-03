@@ -9,34 +9,44 @@ async function loadProjectData(id) {
 }
 
 async function renderProjects() {
+  const projects = [];
+
   for (const id of projectIds) {
     try {
       const project = await loadProjectData(id);
-      const item = document.createElement("div");
-      item.innerHTML = `
-        <div class="item-container">
-            <div class="item-box">
-                <div class="item-image">
-                    <a href="project.html?id=${project.id}">
-                        <img src="${project.images[0]}" alt="${project.title}" width="200"/>
-                    </a>
-                </div>
-
-                <div class="item-content">
-                    <a id="item-link" href="project.html?id=${project.id}">
-                        <h1 id="project-title">${project.title}</h3>
-                    </a>
-
-                    <p>${project.description}</p>
-                </div>
-            </div>
-        </div>
-      `;
-      projectListDiv.appendChild(item);
+      projects.push(project);
     } catch (error) {
       console.error(`Error loading project ${id}:`, error);
     }
   }
+
+  // Sort projects by date descending (most recent first)
+  projects.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+  for (const project of projects) {
+    const item = document.createElement("div");
+    item.innerHTML = `
+      <div class="item-container">
+          <div class="item-box">
+              <div class="item-image">
+                  <a href="project.html?id=${project.id}">
+                      <img class="item-img" src="${project.images[0]}" alt="${project.title}" width="200"/>
+                  </a>
+              </div>
+
+              <div class="item-content">
+                  <a id="item-link" href="project.html?id=${project.id}">
+                      <h1 id="project-title">${project.title}</h1>
+                  </a>
+
+                  <p>${project.description}</p>
+              </div>
+          </div>
+      </div>
+    `;
+    projectListDiv.appendChild(item);
+  }
 }
+
 
 renderProjects();

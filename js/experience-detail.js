@@ -74,6 +74,7 @@ async function renderExperienceDetail() {
       <section class="blurb">
         <div class="blurb-content">
           <h1>${experience.title}</h1>
+          <h3>${experience.date}</h3>
           <p>${experience.fullDescription}</p>
           <div class="item-links">${links}</div>
         </div>

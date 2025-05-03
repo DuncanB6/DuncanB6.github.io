@@ -1,6 +1,7 @@
 {
     "id": "elec391",
     "title": "Robotic Claw",
+    "date": "2024-05-30",
     "description": "A robotic claw capable of detecting and manipulating objects.",
     "fullDescription": "This project was part of my ELEC 391 design course at UBC. With a team, we designed and tested a robotic claw to detect and move various objects. I focused on the mechanical design of the claw, which involved FEA simulation, Simulink simulation, CAD design, and manufacturing challenges. The claw uses a rack and pinion gear system with a parallel linkage.",
     "images": [

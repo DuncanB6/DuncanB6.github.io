@@ -1,0 +1,19 @@
+{
+    "id": "foghorn",
+    "title": "Foghorn",
+    "date": "2025-05-30",
+    "description": "A portable FM transmitter.",
+    "fullDescription": "This is an FM transmitter that can be used to broadcast voice as recorded from an onboard microphone, or audio from an AUX port. It uses several development boards as well as 3D printed components to achieve a small package size and easy to use design.",
+    "images": [
+      "images/projects/foghorn/IMG_7398.JPG",
+      "images/projects/foghorn/explode.jpg",
+      "images/projects/foghorn/IMG_7399.JPG",
+      "images/projects/foghorn/IMG_7397.JPG",
+      "images/projects/foghorn/complete.jpg",
+      "images/projects/foghorn/case.jpg"
+    ],
+    "links": {
+      "github": "https://github.com/DuncanB6/foghorn"
+    }
+  }
+  
